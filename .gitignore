@@ -1,0 +1,6 @@
+ConfigurationFiles/
+.vs/
+.vscode/
+
+
+*.exe
