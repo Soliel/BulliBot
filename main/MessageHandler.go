@@ -5,7 +5,7 @@ import (
 
 	"strings"
 
-	"github.com/soliel/WatchaBot/command"
+	"github.com/soliel/BulliBot/command"
 )
 
 func filterMessages(s *discordgo.Session, m *discordgo.MessageCreate) command.Message {

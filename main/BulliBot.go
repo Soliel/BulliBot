@@ -13,8 +13,8 @@ import (
 
 	"github.com/bwmarrin/discordgo"
 
-	"github.com/soliel/WatchaBot/command"
-	"github.com/soliel/WatchaBot/configuration"
+	"github.com/soliel/BulliBot/command"
+	"github.com/soliel/BulliBot/configuration"
 )
 
 var (
@@ -27,7 +27,7 @@ var (
 )
 
 func main() {
-	loadBotConfBytes, err := ioutil.ReadFile("../ConfigurationFiles/WatchaConf.json")
+	loadBotConfBytes, err := ioutil.ReadFile("../ConfigurationFiles/BulliConf.json")
 	if err != nil {
 		fmt.Println(err)
 		return

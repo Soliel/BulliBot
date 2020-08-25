@@ -10,7 +10,6 @@ import (
 //The Context of the situation the command was used in.
 type Context struct {
 	Msg     *discordgo.MessageCreate
-	Author  *discordgo.User
 	Session *discordgo.Session
 	Guild   *discordgo.Guild
 	Channel *discordgo.Channel
@@ -115,7 +114,6 @@ func (handler Handler) HandleCommand(m *discordgo.MessageCreate, s *discordgo.Se
 
 	ctx := Context{
 		Msg:     m,
-		Author:  m.Author,
 		Session: s,
 		Guild:   guild,
 		Channel: channel,
